@@ -26,26 +26,5 @@ namespace VanhornBMC4.Controllers
             return _addNumberServices.
             AddingNumbers(num1, num2);   
         }
-        [HttpGet]
-        [Route("BiggerNumbers/{num1}/{num2}")]
-        public string BiggerNumbers(int num1, int num2)
-        {
-            return _addNumberServices.
-            BiggerNumbers(num1, num2);   
-        }
-        [HttpGet]
-        [Route("SmallerNumbers/{num1}/{num2}")]
-        public string SmallerNumbers(int num1, int num2)
-        {
-            return _addNumberServices.
-            SmallerNumbers(num1, num2);   
-        }
-        [HttpGet]
-        [Route("WakeUp/{name}/{TimeWakedUp}")]
-        public string WakeUp(string name, string TimeWakedUp)
-        {
-            return _addNumberServices.
-            WakeUp(name, TimeWakedUp);
-        }
     }
 }

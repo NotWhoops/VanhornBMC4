@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace VanhornBMC4.Services
 {
-    public class AddNumbers
+    public class WakeUpServices
     {
-        public string AddingNumbers(int num1, int num2)
+        public string WakeUp(string name, string TimeWakedUp)
         {
-            return $"the sum of {num1} + {num2} = {num1 + num2}";
+            return $"Hello {name} you woke up at {TimeWakedUp}";
         }
     }
 }
