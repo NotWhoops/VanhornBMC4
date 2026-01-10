@@ -40,5 +40,12 @@ namespace VanhornBMC4.Controllers
             return _addNumberServices.
             SmallerNumbers(num1, num2);   
         }
+        [HttpGet]
+        [Route("WakeUp/{name}/{TimeWakedUp}")]
+        public string WakeUp(string name, string TimeWakedUp)
+        {
+            return _addNumberServices.
+            WakeUp(name, TimeWakedUp);
+        }
     }
 }

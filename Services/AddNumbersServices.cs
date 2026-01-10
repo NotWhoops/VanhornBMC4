@@ -19,5 +19,9 @@ namespace VanhornBMC4.Services
         {
             return $"{num1} < {num2} = {num1} < {num2}";
         }
+        public string WakeUp(string name, string TimeWakedUp)
+        {
+            return $"Hello {name} you woke up at {TimeWakedUp}";
+        }
     }
 }
