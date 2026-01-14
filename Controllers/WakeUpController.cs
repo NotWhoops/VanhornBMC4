@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using VanhornBMC4.Services;
 
 namespace VanhornBMC4.Controllers
 {
@@ -10,9 +11,9 @@ namespace VanhornBMC4.Controllers
     [Route("api/[controller]")]
     public class WakeUpController : ControllerBase
     {
-        private readonly WakeUp _wakeUpServices;
+        private readonly WakeUpServices _wakeUpServices;
 
-         public WakeUpController(WakeUp wakeUpServices)
+         public WakeUpController(WakeUpServices wakeUpServices)
         {
             _wakeUpServices = wakeUpServices;
         }
