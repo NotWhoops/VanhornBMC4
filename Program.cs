@@ -1,8 +1,16 @@
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using VanhornBMC4.Services;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddScoped<AddNumbersServices>();
+builder.Services.AddScoped<GreaterOrLessThanServices>();
+builder.Services.AddScoped<WakeUpServices>();
 builder.Services.AddControllers();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace VanhornBMC4.Services
 {
-    public class AddNumbers
+    public class AddNumbersServices
     {
         public string AddingNumbers(int num1, int num2)
         {
